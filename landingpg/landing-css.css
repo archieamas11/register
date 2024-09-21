@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #F3F7EC;
+}
+
+.wrapper{
+    margin-top: 80px;
+    width: 1080px;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+
+    #clip{
+        width: 600px;
+        position: absolute;
+        left: 0;
+        top: 150px;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    background-color: #F3F7EC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 50px;
+
+    img {
+        width: 100px;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 40px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        transition: color .3s ease;
+    }
+
+    a:hover{
+        color: #E88D67;
+    }
+
+}
+
+.intro{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    padding: 30px;
+    right: 30px;
+    top: 150px;
+
+    img {
+        width: 200px;
+        top: 30px;
+    }
+
+    p{
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+
+}
+
+.wipe-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 150px;
+    font-size: 16px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.wipe-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #E88D67;
+    transition: left 0.4s ease;
+    z-index: -1;
+}
+
+.wipe-button:hover::before {
+    left: 0;
+}
+
+.wipe-button span {
+    position: relative;
+    z-index: 2;
+}

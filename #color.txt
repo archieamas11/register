@@ -1,0 +1,15 @@
+pastel-white
+#F3F7EC
+rgb(243, 247, 236)
+
+orange
+#E88D67
+rgb(232, 141, 103)
+
+blue
+#006989
+rgb(0, 105, 137)
+
+navy
+#005C78
+rgb(0, 92, 120)

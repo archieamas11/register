@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="register-css.css" />
+    <link rel="icon" href="../logo/logo-simple.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to NoteIt!</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="../logo/logo-bs-os.png" />
+      <ul>
+        <li><a href="../landingpg/landing-html.html">HOME</a></li>
+        <li><a href="">REGISTER</a></li>
+        <li><a href="../loginpg/login-html.html">SIGN IN</a></li>
+      </ul>
+    </div>
+
+    <div class="background">
+      <div class="bgcontent">
+        <h1>Expand your Horizons</h1>
+        <p>Join the largest note-taking website on the web!</p>
+      </div>
+    </div>
+
+    <div class="intro">
+      <h2>Register Form</h2>
+      <form class="login-form">
+        <div class="form-left">
+          <div class="input-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" required />
+          </div>
+          <div class="input-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required />
+          </div>
+          <div class="input-group">
+            <label for="bdate">Birthdate</label>
+            <input type="date" id="bdate" name="bdate" required />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+
+        <div class="form-right">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <div class="options-group">
+            <div class="remember-me">
+              <input type="checkbox" id="remember" name="remember" />
+              <label for="remember">Sign me in</label>
+            </div>
+            <div class="forgot-password">
+              <a href="#">Forgot Password?</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="../loginpg/login-html.html">
+          <button type="button" class="wipe-button">
+            <span>REGISTER</span>
+          </button>
+        </a>
+      </form>
+    </div>
+  </body>
+</html>
